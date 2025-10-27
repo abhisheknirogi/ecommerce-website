@@ -1,0 +1,194 @@
+/* =============================
+   🛍️ ShopEase E-Commerce Styles
+   ============================= */
+
+/* --- Reset & Base Styles --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f8f9fb;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* --- Header --- */
+header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0077ff;
+}
+
+#cart-btn {
+  background-color: #0077ff;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#cart-btn:hover {
+  background-color: #005ed4;
+}
+
+/* --- Filter Section --- */
+#filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  margin-top: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#category-filter, #price-filter {
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* --- Product Grid --- */
+#product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.product-card p {
+  margin: 0.4rem 0;
+  color: #666;
+}
+
+.product-card button {
+  margin-top: 0.8rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #0077ff;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.product-card button:hover {
+  background-color: #005ed4;
+}
+
+/* --- Cart Section --- */
+#cart-section {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+#cart-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #0077ff;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+#total-price {
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+.clear-btn {
+  background-color: #ff4b4b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: block;
+  margin: 1rem auto 0;
+}
+
+.clear-btn:hover {
+  background-color: #d63d3d;
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f1f1f1;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #filters {
+    flex-direction: column;
+  }
+
+  #cart-section {
+    margin: 1rem;
+  }
+}
