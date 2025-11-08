@@ -1,4 +1,4 @@
-/* 🌟 Global Reset */
+/* Global Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,14 +6,14 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* 🌈 Body */
+/*  Body */
 body {
   background-color: #ccd2d8;
   color: #b69d9d;
   min-height: 100vh;
 }
 
-/* 🛍️ Navbar */
+/*  Navbar */
 header {
   display: flex;
   justify-content: space-between;
@@ -61,7 +61,7 @@ header h1 {
   right: -10px;
 }
 
-/* 🧭 Filters */
+/*  Filters */
 #filters {
   display: flex;
   justify-content: center;
@@ -84,7 +84,7 @@ header h1 {
   color: #333;
 }
 
-/* 🛒 Product Grid */
+/*  Product Grid */
 #productGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -93,7 +93,7 @@ header h1 {
   justify-items: center;
 }
 
-/* 📦 Product Card */
+/*  Product Card */
 .product {
   background: #151111;
   border-radius: 12px;
@@ -110,7 +110,7 @@ header h1 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* 🖼️ Product Image */
+/*  Product Image */
 .product img {
   width: 100%;
   height: 250px;
@@ -124,7 +124,7 @@ header h1 {
   transform: scale(1.05);
 }
 
-/* 🏷️ Product Info */
+/*  Product Info */
 .product h3 {
   font-size: 1.1rem;
   margin: 10px 0 5px;
@@ -136,7 +136,7 @@ header h1 {
   font-weight: 600;
 }
 
-/* 🛍️ Add to Cart Button */
+/* Add to Cart Button */
 .product button {
   margin: 10px 0 15px;
   background: linear-gradient(90deg, #0077ff, #00b8ff);
@@ -154,7 +154,7 @@ header h1 {
   transform: scale(1.05);
 }
 
-/* 🧾 Cart Section */
+/*  Cart Section */
 #cartSection {
   background: rgb(16, 10, 10);
   padding: 25px;
@@ -186,7 +186,7 @@ header h1 {
   display: none;
 }
 
-/* 📱 Responsive */
+/*  Responsive */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
