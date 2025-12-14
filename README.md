@@ -1,3 +1,5 @@
+This is a project for Jasnav
+
 # ShopSmart – Product Catalog Web App
 
 A clean and responsive **Product Catalog** web application built using **HTML, CSS, and JavaScript**.  
